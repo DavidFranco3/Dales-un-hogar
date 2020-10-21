@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="David Franco">
+
+    <title>REGISTRAR</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+
+    <meta name="theme-color" content="#ee0979">
+    <link rel="manifest" href="/manifest.json">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">MICHOACAN DE OCAMPO 2020!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">DALES UN HOGAR</a>
+            </li>
+            <li class="nav-item">
+              <!--<a class="nav-link" href="#">Log In</a>-->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white">
+      <div class="masthead-content">
+        <div class="container">
+          <h2 class="masthead-heading mb-0">CUANDO USTED ABANDONA UN ANIMAL PORQUE YA "NO LE SIRVE" SUS HIJOS APRENDEN LA LECCIÓN.</h2>
+          <h2 class="masthead-subheading mb-0">QUIZAS HAGAN LO MISMO CON USTED CUANDO SEA UN ANCIANO.</h2>
+          <h2 class="masthead-subheading mb-0">PIENSELO</h2>
+          <a  class="btn btn-primary btn-xl rounded-pill mt-5">Lee nuestro aviso de privacidad!</a>
+        </div>
+      </div>
+      <div class="bg-circle-1 bg-circle"></div>
+      <div class="bg-circle-2 bg-circle"></div>
+      <div class="bg-circle-3 bg-circle"></div>
+      <div class="bg-circle-4 bg-circle"></div>
+    </header>
+
+    <section>
+      <form action="validar.php" method="post" accept-charset="utf-8" name="frm" onSubmit="return valida_envia();">
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/OIP.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h4 class="display-5">¿Tu o algun conocido a abandonado un animal en la calle?</h4>
+<legend>Seleccionar:</legend>
+<select name="p1" required>
+<option>Deslizar para mostrar opciones</option>
+    <option type="radio" name="p1" value="si">Si</option>
+    <option type="radio" name="p1" value="no">No</option>
+    </select>
+
+
+             <!-- <p>Haz presentado sintomas como Fiebre de mas de 38°</p>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/fa651a16-b8c1-49ad-b07a-e5324f44783b_1024_512.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+              <h2 class="display-5">¿tienes mascotas en casa?</h2>
+              <legend>Seleccionar:</legend>
+<label>
+
+<input type="radio" name="p3" value="1">Si<br/>
+<input type="radio" name="p4" value="2">No<br/>
+
+</label>
+
+              <!--<p>Haz acudido a sitios concurridos</p>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/OIP1.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-5">¿Haz rescatado algun animal callejero?</h2>
+              <legend>Seleccionar:</legend>
+<label>
+
+<input type="radio" name="p1" value="1">Si<br/>
+<input type="radio" name="p1" value="2">No<br/>
+
+</label>
+              <!--<p>Haz tenido dolor de cabeza?</p>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/conejo-perro-gato.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+              <h2 class="display-5">¡¿cual es tu animal(es) favorito(s)?!</h2>
+              <legend>Seleccionar:</legend>
+<label>
+<input type="checkbox" name="p1" value="1">Gato<br/>
+<input type="checkbox" name="p1" value="2">Perro<br/>
+<input type="checkbox" name="p1" value="3">Conejo<br/>
+
+</label>
+
+              <!--<p>Haz acudido a sitios concurridos</p>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/kitten-to-adult-cat.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-5">Elige tu rango de edad...!</h2>
+              <legend>Seleccionar:</legend>
+<select name='edad' id='edad'> 
+    <option value='0'>Elige tu rango de edad...</option>"; 
+    <option value='uno'>0 a 15 años...</option>";
+    <option value='dos'>16 a 25 años</option>";
+    <option value='tres'>26 a 35 años</option>";
+    <option value='cuatro'>36 a 45 años</option>";
+    <option value='cinco'>46 a 55 años</option>";
+    <option value='seis'>MAYOR DE 56 AÑOS</option>";
+        
+    </select>
+              <!--<p>Haz tenido dolor de cabeza?</p>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="img/OIP2.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+              <h2 class="display-5">Por favor Rellena los campos...</h2>
+              
+              <legend>Completar:</legend>
+<form action="validar.php" method="post">
+  
+    <table border="0">
+<tr><th colspan="2" bgcolor="white"><label style="font-size: 14pt"><b>
+
+  </b></label></th>
+      </tr>
+    <tr><td align="center"><label style="font-size: 14pt"><b>Nombre(s): </b></label><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+       <input class="form-group has-success" style="width:300px;height:20px" type="text" name="nombre" required="campo obligatorio"></td></tr>
+    
+    <tr><td align="center"><label style="font-size: 14pt"><b>Apellidos: </b></label><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <input class="form-group has-success" style="width:300px;height:20px" type="text" name="apellidos" required="campo obligatorio"></td></tr>
+
+      <tr><td align="center"><label style="font-size: 14pt"><b>Correo electronico: </b></label><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+       <input class="form-group has-success" style="width:300px;height:20px" type="email" name="correo" required="campo obligatorio"></td></tr>
+
+       <tr><td align="center"><label style="font-size: 14pt"><b>Numero de telefono: </b></label><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+       <input class="form-group has-success" style="width:300px;height:20px" type="number" name="numero" required="campo obligatorio"></td></tr>
+
+    <tr><td align="center"><label style="font-size: 14pt"><b>Ciudad: </b></label><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+	  <select name="ciudad" id="ciudad" required="campo obligatorio">
+    <option value='cero'>Elige tu ciudad...</option>"; 
+    <option value='uno'>Acuitzio</option>";
+    <option value='dos'>Aguililla</option>";
+    <option value='tres'>Álvaro Obregón</option>";
+    <option value='cuatro'>Angamacutiro</option>";
+    <option value='cinco'>Angangueo</option>";
+    <option value='seis'>Apatzingán</option>";
+    <option value='siete'>Aporo</option>";
+    <option value='ocho'>Aquila</option>";
+    <option value='nueve'>Ario</option>";
+    <option value='diez'>Arteaga</option>";
+    <option value='once'>Briseñas</option>";
+    <option value='doce'>Buenavista</option>";
+    <option value='trece'>Carácuaro</option>";
+    <option value='catorce'>Coahuayana</option>";
+	  <option value='quince'>Coalcomán</option>";
+    <option value='diesiceis'>Coeneo</option>";
+    <option value='diecisiete'>Contepec</option>";
+    <option value='dieciocho'>Copándaro</option>";
+    <option value='diecinueve'>Cotija</option>";
+    <option value='veinte'>Cuitzeo</option>";
+    <option value='veintiuno'>Charapan</option>";
+    <option value='veintidos'>Charo</option>";
+    <option value='veintitres'>Chavinda</option>";
+    <option value='veinticuatro'>Cherán</option>";
+    <option value='veinticinco'>Chilchota</option>";
+    <option value='veintiseis'>Chinicuila</option>";
+    <option value='veintisiete'>Chucándiro</option>";
+    <option value='veintiocho'>Churintzio</option>";
+    <option value='veintinueve'>Churumuco</option>";
+    <option value='treinta'>Ecuandureo</option>";
+    <option value='treintaiuno'>Epitacio Huerta</option>";
+    <option value='treintaidos'>Erongarícuaro</option>";
+    <option value='treintaitres'>Gabriel Zamora</option>";
+    <option value='treintaicuatro'>Hidalgo</option>";
+    <option value='treintaicinco'>Huandacareo</option>";
+    <option value='treintaiseis'>Huaniqueo</option>";
+    <option value='treintaisiete'>Huetamo</option>";
+    <option value='treintaiocho'>Huiramba</option>";
+    <option value='treintainueve'>Indaparapeo</option>";
+    <option value='cuarenta'>Irimbo</option>";
+    <option value='cuarentaiuno'>Ixtlán</option>";
+    <option value='cuarentaidos'>Jacona</option>";
+    <option value='cuarentaitres'>Jiménez</option>";
+    <option value='cuarentaicuatro'>Jiquilpan</option>";
+    <option value='cuarentaicinco'>Juárez</option>";
+    <option value='cuarentaiseis'>Jungapeo</option>";
+    <option value='treintaisiete'>La Huacana</option>";
+    <option value='cuarentaiocho'>Lagunillas</option>";
+    <option value='cuarentainueve'>Lázaro Cárdenas</option>";
+    <option value='cincuenta'>Madero</option>";
+    <option value='cincuentaiuno'>Maravatío</option>";
+    <option value='cincuentaidos'>Marcos Castellanos</option>";
+    <option value='cincuentaitres'>Morelia</option>";
+    <option value='cincuentaicuatro'>Morelos</option>";
+    <option value='cincuentaicinco'>Múgica</option>";
+    <option value='cincuentaiseis'>Nahuatzen</option>";
+    <option value='cincuentaisiete'>Nocupétaro</option>";
+    <option value='cincuentaiocho'>Nuevo Parangaricutiro</option>";
+    <option value='cincuentainueve'>Nuevo Urecho</option>";
+    <option value='sesenta'>Numarán</option>";
+    <option value='sesentaiuno'>Ocampo</option>";
+    <option value='sesentaidos'>Pajacuarán</option>";
+    <option value='sesentaitres'>Panindícuaro</option>";
+	  <option value='sesentaicuatro'>Parácuaro</option>";
+	  <option value='sesentaicinco'>Paracho</option>";
+	  <option value='sesentaiseis'>Pátzcuaro</option>";
+	  <option value='sesentaisiete'>Penjamillo</option>";
+	  <option value='sesentaiocho'>Peribán</option>";
+	  <option value='sesentainueve'>La Piedad</option>";
+	  <option value='setenta'>Purépero</option>";
+	  <option value='setentaiuno'>Puruándiro</option>";
+	  <option value='setentaidos'>Queréndaro</option>";
+	  <option value='setentaitres'>Quiroga</option>";
+	  <option value='setentaicuatro'>Cojumatlán de Régules</option>";
+	  <option value='setentaicinco'>Los Reyes</option>";
+	  <option value='setentaiseis'>Sahuayo</option>";
+	  <option value='setentaisiete'>San Lucas</option>";
+	  <option value='setentaiocho'>Santa Ana Maya</option>";
+	  <option value='setentainueve'>Salvador Escalante</option>";
+	  <option value='ochenta'>Senguio</option>";
+	  <option value='ochentaiuno'>Susupuato</option>";
+	  <option value='ochentaidos'>Tacámbaro</option>";
+	  <option value='ochentaitres'>Tancítaro</option>";
+	  <option value='ochentaicuatro'>Tangamandapio</option>";
+	  <option value='ochentaicinco'>Tangancícuaro</option>";
+	  <option value='ochentaiseis'>Tanhuato</option>";
+	  <option value='ochentaisiete'>Taretan</option>";
+	  <option value='ochentaiocho'>Tarímbaro</option>";
+	  <option value='ochentainueve'>Tepalcatepec</option>";
+	  <option value='noventa'>Tingambato</option>";
+	  <option value='noventaiuno'>Tingüindín</option>";
+	  <option value='noventaidos'>Tiquicheo de Nicolás Romero</option>";
+	  <option value='noventaitres'>Tlalpujahua</option>";
+	  <option value='noventaicuatro'>Tlazazalca</option>";
+	  <option value='noventaicinco'>Tocumbo</option>";
+	  <option value='noventaiseis'>Tumbiscatío</option>";
+	  <option value='noventaisiete'>Turicato</option>";
+	  <option value='noventaiocho'>Tuxpan</option>";
+	  <option value='noventainueve'>Tuzantla</option>";
+	  <option value='cien'>Tzintzuntzan</option>";
+	  <option value='cientouno'>Tzitzio</option>";
+	  <option value='cientodos'>Uruapan</option>";
+	  <option value='cientotres'>Venustiano Carranza</option>";
+	  <option value='cientocuatro'>Villamar</option>";
+	  <option value='cientocinco'>Vista Hermosa</option>";
+	  <option value='cientoseis'>Yurécuaro</option>";
+	  <option value='cientosiete'>Zacapu</option>";
+	  <option value='cientocoho'>Zamora</option>";
+	  <option value='cientonueve'>Zináparo</option>";
+	  <option value='cientodiez'>Zinapécuaro</option>";
+	  <option value='cientoonce'>Ziracuaretiro</option>";
+	  <option value='cientodoce'>Zitácuaro</option>";
+	  <option value='cientotrece'>José Sixto Verduzco</option>";
+        </select>
+    </td></tr>
+
+    <tr><td align="center"><label style="font-size: 14pt"><b>Contraseña: </b></label><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <input class="form-group has-success" style="width:300px;height:20px" type="password" name="contraseña" required="campo obligatorio"></td></tr>
+      
+      <tr><td align="center"><label style="font-size: 14pt"><b>Confirmar contraseña: </b></label><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <input class="form-group has-success" style="width:300px;height:20px" type="password" name="confirmarContraseña" required="campo obligatorio"></td></tr>
+
+    <tr><td width=80 align=center  height="50px"><input class="btn btn-primary" type="submit" value="Registar"></td>
+      </tr></tr></table>
+    </form>
+              <!--<p>Haz acudido a sitios concurridos</p>-->
+            </div>
+         </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-5 bg-black">
+      <div class="container">
+      	<p align=center> Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad</p>
+        <p align=center> ¿Ya tienes una cuenta?<a class="link" href="login.html">Iniciar Sesion</a></p>
+        <p class="m-0 text-center text-white small"> &copy; #DALESUNHOGAR</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+
+</html>
